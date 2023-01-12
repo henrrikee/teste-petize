@@ -3,10 +3,10 @@ import { Observable, retry } from "rxjs";
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Injectable()
-export class ViaCepService {
+export class GitHubService {
 
     readonly URL_GITHUB = 'https://api.github.com/users'
-    
+
     constructor(protected http: HttpClient) { }
 
     private generatorHeaders() {
@@ -25,6 +25,7 @@ export class ViaCepService {
 
 export class User {
     login!: string;
+    name!: string;
     id!: string;
     avatar_url!: string;
     followers_url!: string;
@@ -34,4 +35,7 @@ export class User {
     email!: string;
     bio!: string;
     twitter_username!: string;
+    followers!: string;
+    following!: string;
+    blog!:string;
 }

@@ -22,6 +22,7 @@
     "@mui/material": "^5.11.4",
     "@mui/styled-engine-sc": "^5.11.0",
     "npm": "^9.2.0",
+    "primeflex": "^3.3.0",
     "primeicons": "^6.0.1",
     "primeng": "^15.0.1",
     "rxjs": "~7.8.0",

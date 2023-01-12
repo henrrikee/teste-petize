@@ -5,10 +5,10 @@
 <p class="title" style="color: #8C19D2; text-align: right">d_evs</p>
 <span class="p-input-icon-left title" style="margin-top: 6.7%">
     <i class="pi pi-search" style="margin-top: 2.6%;"></i>
-    <input type="text" placeholder="Search" size="40" pInputText/>
+    <input type="text" placeholder="Search" [(ngModel)]="searchValue" size="40" pInputText/>
 </span>
 <span class="title" style="margin-left: 21%; margin-top: 6.1%">
-<button pButton type="button" label="Search" class="p-button-help"></button>
+<button pButton type="button" label="Search" (click)="getUser()" class="p-button-help"></button>
 </span>
 
 

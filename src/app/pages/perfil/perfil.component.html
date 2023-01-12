@@ -1,0 +1,34 @@
+<style>
+    @import url('https://fonts.cdnfonts.com/css/nunito');
+</style>
+<form #frm="ngForm" name="formUser" th:method="post">
+    <div class="nav-bar">
+        <p class="search-devs inline-flex">Search <font color="#8C19D2">d_evs</font>
+        </p>
+        <span class="p-input-icon-left input1 flex-row">
+            <i class="pi pi-search"></i>
+            <input type="text" placeholder="Search" size="68" pInputText />
+        </span>
+        <span class="flex-row">
+            <button pButton type="button" style="margin-left: 180%; margin-bottom: 10%;" label="voltar"
+                [routerLink]="['/']" class="p-button-help"></button>
+        </span>
+    </div>
+    <p-card class="card-1">
+        <div class="avatar inline-block">
+            <p-avatar label="" class="form-control ajust-avatar" name="avatar_url" id="avatar_url" styleClass="mr-2"
+                size="xlarge" shape="circle"></p-avatar>
+        </div>
+        <span class="ajust-text" style="margin-bottom: 10px;">{{user.name}}</span><br>
+        <span class="ajust-text">@{{user.login}}</span><br><br>
+        <span>{{user.bio}}</span><br><br>
+        <span><i class="pi pi-heart"></i>&nbsp;{{user.followers}} Seguidores </span><br>
+        <span><i class="pi pi-user"></i>&nbsp;{{user.following}} Seguindo</span><br><br>
+        <span><i class="pi pi-link"></i><a href={{user.blog}} target="_blank">{{user.blog}}</a></span><br><br>
+        <span><i class="pi pi-twitter"></i>&nbsp;<a href="https://twitter.com/{{user.twitter_username}}" target="_blank">{{user.twitter_username}}</a></span><br>
+    </p-card>
+
+    <div class="card-2">
+
+    </div>
+</form>

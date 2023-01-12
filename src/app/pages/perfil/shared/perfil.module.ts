@@ -1,10 +1,13 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { RouterModule } from "@angular/router";
-import { HomeRoutingModule, routes } from "./home.module.routing";
+import { PerfilRoutingModule, routes } from "./perfil.module.routing";
 import { InputTextModule } from 'primeng/inputtext';
 import { FormsModule } from "@angular/forms";
 import {ButtonModule} from 'primeng/button';
+import { HomeRoutingModule } from "../../home/shared/home.module.routing";
+import {AvatarModule} from 'primeng/avatar';
+import {CardModule} from 'primeng/card';
 
 @NgModule({
     declarations: [
@@ -14,15 +17,20 @@ import {ButtonModule} from 'primeng/button';
     ],
 
     imports: [
+        CardModule,
+        AvatarModule,
         RouterModule.forChild(routes),
         HomeRoutingModule,
+        PerfilRoutingModule,
         CommonModule,
         InputTextModule,
         FormsModule,
         ButtonModule,
 
     ],
-    providers: [],
+    providers: [
+
+    ],
 
 })
-export class HomeModule { }
+export class PerfilModule { }
