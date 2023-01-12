@@ -3,10 +3,8 @@ import { NgModule } from "@angular/core";
 import { RouterModule } from "@angular/router";
 import { HomeRoutingModule, routes } from "./home.module.routing";
 import { InputTextModule } from 'primeng/inputtext';
-import { BrowserModule } from "@angular/platform-browser";
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {TreeSelectModule} from 'primeng/treeselect';
-import {ToggleButtonModule} from 'primeng/togglebutton';
+import { FormsModule } from "@angular/forms";
+import {ButtonModule} from 'primeng/button';
 
 @NgModule({
     declarations: [
@@ -20,6 +18,9 @@ import {ToggleButtonModule} from 'primeng/togglebutton';
         HomeRoutingModule,
         CommonModule,
         InputTextModule,
+        FormsModule,
+        ButtonModule,
+
     ],
     providers: [],
 

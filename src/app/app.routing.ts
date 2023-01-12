@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
+import { HomeComponent } from './pages/teste/home.component';
 
 
 export const AppRoutes: Routes = [
@@ -8,7 +8,7 @@ export const AppRoutes: Routes = [
     children: [
       { 
         path: '', 
-        loadChildren: () => import('./pages/home/home.module').then(x => x.HomeModule), 
+        loadChildren: () => import('./pages/teste/shared/home.module').then(x => x.HomeModule), 
       }
     ]
   }
