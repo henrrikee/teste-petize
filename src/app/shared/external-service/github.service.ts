@@ -21,6 +21,12 @@ export class GitHubService {
             .pipe(retry(1));
     }
 
+    getReposUser(name: string): Observable<Repos[]> {
+        const headers = new HttpHeaders();
+        return this.http.get<Repos[]>(`${this.URL_GITHUB}/${name}/repos`, { headers })
+            .pipe(retry(1));
+    }
+
 }
 
 export class User {
@@ -38,4 +44,12 @@ export class User {
     followers!: string;
     following!: string;
     blog!:string;
+}
+
+export class Repos {
+    id!: string;
+    name!: string;
+    description!: string;
+    updated_at!: string;
+    stargazers_count!: string;
 }
