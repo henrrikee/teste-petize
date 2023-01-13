@@ -1,3 +1,6 @@
+# Video demonstrando o funcionamento do projeto
+https://earneo.tube/video/119446
+
 # Instalando o projeto
 
 • Primeiramente vamos clonar o projeto no GitHub para uma máquina local.
