@@ -17,7 +17,8 @@
         </p>
         <span class="p-input-icon-left input1 flex-row">
             <i class="pi pi-search"></i>
-            <input type="text" placeholder="Search" (keyup.enter)="getUser()" size="68" [(ngModel)]="searchValue" pInputText />
+            <input type="text" placeholder="Search" (keyup.enter)="getUser()" size="68" [(ngModel)]="searchValue"
+                pInputText />
         </span>
         <div class="nav-bar">
             <button pButton type="button" style="margin-left: 1050px; margin-right: 5px;" label="Search"
@@ -28,8 +29,8 @@
     <form #frm="ngForm" name="formUser" th:method="post">
         <p-card class="card-1">
             <div class="avatar">
-                <p-avatar label="" image={{user.avatar_url}} name="avatar_url"
-                    id="avatar_url" styleClass="mr-2" size="xlarge" shape="circle"></p-avatar>
+                <p-avatar label="" image={{user.avatar_url}} name="avatar_url" id="avatar_url" styleClass="mr-2"
+                    size="xlarge" shape="circle"></p-avatar>
             </div>
             <span class="p-avatar-text ajust-text"><b>{{user.name}}</b></span><br>
             <span class="p-avatar-text ajust-text" style="color: rgba(160, 174, 192, 1);">@{{user.login}}</span><br><br>
@@ -41,8 +42,8 @@
             <span><i class="pi pi-link"></i><a href={{user.blog}} target="_blank">&nbsp;{{user.blog}}</a></span><br>
             <span><i class="pi pi-twitter"></i>&nbsp;<a href="https://twitter.com/{{user.twitter_username}}"
                     target="_blank">{{user.twitter_username}}</a></span><br>
-            <button pButton type="button" label="Contato" style="width: 245px; margin-top:30px" (click)="getUser()"
-                class="p-button-help"></button>
+            <a href="https://github.com/{{user.login}}" target="_blank"><button pButton type="button" label="Contato"
+                    style="width: 245px; margin-top:30px" class="p-button-help"></button></a>
         </p-card>
 
         <ul>

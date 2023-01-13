@@ -1,11 +1,16 @@
 # Instalando o projeto
 
 • Primeiramente vamos clonar o projeto no GitHub para uma máquina local.
+
 • Acesse o link do projeto no GitHub - https://github.com/henrrikee/teste-petize.
-• Clique no botão verde do lado esquerdo "<> Code", copie o código HTTPS.
-• Crie uma pasta em seu disco, abra seu terminal git e digite "git clone" de um espaço e cole o código HTTPS copiado.
-• Abra a sua IDE,  clique em File e "Open Folder" (caminho do VS Code).
-• Se tudo correu bem até aqui, o projeto esta aberto na sua máquina.
+
+• Clique no botão verde do lado direito "<> Code", copie o código HTTPS.
+
+• Crie uma pasta em seu disco, abra seu terminal git e digite "git clone" de um espaço, cole o código HTTPS copiado.
+
+• Abra a sua IDE,  clique em File em seguida "Open Folder" (caminho do VS Code).
+
+• Se tudo correu bem até aqui, o projeto esta aberto na sua máquina!
 
 # Instalando componentes para o funcionamento
 
@@ -29,17 +34,17 @@ do navegador da web "localhost:4200" e precionar ENTER.
 
 # Motivação das escolhas usadas
 
-Como parte visual, escolhi usar o PrimeNG, pois tem uma interface moderna e bonita, junto com várias funcionalidades
-que são indispensáveis para um bom projeto, o gerenciador de pacotes foi o Node, creio que para programação web usando Angular
-ela venha ser o mais apropiado, pois é leve e multiplatadorma, também permite trabalhar com JS de uma forma mais ampla.
+Como parte visual, foi usado o PrimeNG, pois tem uma interface moderna e bonita, junto com várias funcionalidades
+que são indispensáveis para um bom projeto, o gerenciador de pacotes foi o Node, pois para programação web, usando Angular,
+ele vem demonstrando ser o mais apropiado, pois é leve e multiplataforma, permitindo trabalhar com JS de uma forma mais ampla.
 
 # Estrutura do projeto
 
 O projeto teve a seguinte estrutura:
 
-• Dentro da pasta principal "app", criei uma pasta "pages" a qual coloquei as duas paginas do projeto "Home" e "Perfil".
-• Criei uma pasta "shared" dentro da pasta principal "app" para construir o "external service".
-• Em seguida construi o "github.service.ts" que faz toda a comunicação com a API externa do GitHub.
-• Buscando os dados no end-point da API do GitHub, fui realizando os códigos necessários para tratar esses dados e imprimir em tela.
+• Dentro da pasta principal "app", foi criado uma pasta "pages" a qual recebeu as duas paginas do projeto "Home" e "Perfil".
+• Foi criado uma pasta "shared" dentro da pasta principal "app" para construir o "external service".
+• Em seguida foi desenvolvido o código do "github.service.ts" que faz toda a comunicação com a API externa do GitHub.
+• Buscando os dados no end-point da API do GitHub, foi escrito os códigos necessários para tratar esses dados e imprimir em tela.
 
 
