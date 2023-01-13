@@ -11,22 +11,25 @@
     <title>Document</title>
 </head>
 
-<body class="ajust">
-    <div>
-        <p class="title">Search
-        <p class="title" style="color: #8C19D2; text-align: right">d_evs</p>
-    </div>
-    <div>
-        <span class="input1 p-input-icon-left">
-            <i class="pi pi-search"></i>
-            <input type="text" placeholder="Search" (keyup.enter)="getUser()" [(ngModel)]="searchValue" size="70" pInputText />
-        </span>
-    </div>
-    <div>
-        <span class="button1">
-            <button pButton type="button" label="Search" (click)="getUser()" class="p-button-help" style="width: 700%;"></button>
-        </span>
-
+<body>
+    <div class="ajust">
+        <div>
+            <p class="title">Search
+            <p class="title" style="color: #8C19D2; margin-left: 290px;">d_evs</p>
+        </div>
+        <div>
+            <span class="input1 p-input-icon-left">
+                <i class="pi pi-search"></i>
+                <input type="text" placeholder="Search" (keyup.enter)="getUser()" [(ngModel)]="searchValue" size="70"
+                    pInputText />
+            </span>
+        </div>
+        <div>
+            <span class="button1 input1">
+                <button pButton type="button" label="Search" (click)="getUser()" class="p-button-help"
+                    style="width: 700%;"></button>
+            </span>
+        </div>
     </div>
 </body>
 

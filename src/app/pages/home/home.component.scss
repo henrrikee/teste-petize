@@ -22,8 +22,9 @@
 
 .title {
 
+  display: flex;
   position: absolute;
-  width: 488px;
+  width: 900px;
   height: 109px;
   left: 660px;
   top: 300px;
@@ -60,13 +61,13 @@
   align-items: center;
   padding: 10px 24px;
   gap: 8px;
-  
+
   position: absolute;
   width: 176px;
   height: 48px;
   left: 1120px;
   top: 540px;
-  
+
   border-radius: 6px;
 }
 
@@ -96,6 +97,8 @@
 
 }
 
-.ajust {
-  width:3150px
+@media screen and (max-width: 460px) {
+  .title {
+    font-size: 70px;
+  }
 }
