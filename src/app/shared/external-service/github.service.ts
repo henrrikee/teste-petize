@@ -44,6 +44,7 @@ export class User {
     followers!: string;
     following!: string;
     blog!:string;
+    company!:string;
 }
 
 export class Repos {
@@ -52,4 +53,5 @@ export class Repos {
     description!: string;
     updated_at!: string;
     stargazers_count!: string;
+    clone_url!: string;
 }

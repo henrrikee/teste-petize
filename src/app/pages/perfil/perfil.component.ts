@@ -12,7 +12,7 @@ export class PerfilComponent {
   user!: User
   userLogin!: string
   repos!: Repos
-  reposArray: Repos[] = []
+  reposArray!: any[]
   searchValue: string = '';
 
   constructor(
@@ -36,12 +36,9 @@ export class PerfilComponent {
       })
       this.gitHubService.getReposUser(name).subscribe(gitHubReposResponse => {
         this.reposArray = gitHubReposResponse
-        this.repos.name = gitHubReposResponse[0].name
-        this.repos.description = gitHubReposResponse[0].description
-        this.repos.stargazers_count = gitHubReposResponse[0].stargazers_count
-        this.repos.updated_at = gitHubReposResponse[0].updated_at
-        console.log("Repos", this.repos)
-        console.log("Repos Name", this.repos.name)
+        this.reposArray.sort((a,b) => (a.stargazers_count < b.stargazers_count) ? 1 : (b.stargazers_count < a.stargazers_count) ? -1 : 0)
+          console.log("reposArray", this.reposArray)
+
       })
     })
 
