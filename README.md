@@ -1,10 +1,15 @@
 # Instalando o projeto
 
 • Primeiramente vamos clonar o projeto no GitHub para uma máquina local.
+
 • Acesse o link do projeto no GitHub - https://github.com/henrrikee/teste-petize.
+
 • Clique no botão verde do lado esquerdo "<> Code", copie o código HTTPS.
+
 • Crie uma pasta em seu disco, abra seu terminal git e digite "git clone" de um espaço e cole o código HTTPS copiado.
+
 • Abra a sua IDE,  clique em File e "Open Folder" (caminho do VS Code).
+
 • Se tudo correu bem até aqui, o projeto esta aberto na sua máquina.
 
 # Instalando componentes para o funcionamento
