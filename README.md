@@ -1,27 +1,45 @@
-# TestePetize
+# Instalando o projeto
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1.
+• Primeiramente vamos clonar o projeto no GitHub para uma máquina local.
+• Acesse o link do projeto no GitHub - https://github.com/henrrikee/teste-petize.
+• Clique no botão verde do lado esquerdo "<> Code", copie o código HTTPS.
+• Crie uma pasta em seu disco, abra seu terminal git e digite "git clone" de um espaço e cole o código HTTPS copiado.
+• Abra a sua IDE,  clique em File e "Open Folder" (caminho do VS Code).
+• Se tudo correu bem até aqui, o projeto esta aberto na sua máquina.
 
-## Development server
+# Instalando componentes para o funcionamento
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+• O Gerenciador de pacotes usados foi o NPM (Node Package Manager) V 9.2.0
+Para instalar digite "npm i npm@9.2.0".
 
-## Code scaffolding
+• A Versão do Angular/Cli usada foi a V 15.1.0
+Para instalar digite "npm i @angular/cli@15.1.0.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+• Toda parte de componentes visuais foi usado PrimeNG V 15.0.1
+Para instalar digite:
+npm install primeng --save
+npm install primeicons --save
+npm install primeflex --save
 
-## Build
+# Startando o projeto
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+• Abra o terminal da sua IDE, e digite "npm start" precione ENTER
+• O projeto vai rodar na porta 4200, caso não abra de forma automática é preciso digitar na barra de endereço
+do navegador da web "localhost:4200" e precionar ENTER.
 
-## Running unit tests
+# Motivação das escolhas usadas
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Como parte visual, escolhi usar o PrimeNG, pois tem uma interface moderna e bonita, junto com várias funcionalidades
+que são indispensáveis para um bom projeto, o gerenciador de pacotes foi o Node, creio que para programação web usando Angular
+ela venha ser o mais apropiado, pois é leve e multiplatadorma, também permite trabalhar com JS de uma forma mais ampla.
 
-## Running end-to-end tests
+# Estrutura do projeto
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+O projeto teve a seguinte estrutura:
 
-## Further help
+• Dentro da pasta principal "app", criei uma pasta "pages" a qual coloquei as duas paginas do projeto "Home" e "Perfil".
+• Criei uma pasta "shared" dentro da pasta principal "app" para construir o "external service".
+• Em seguida construi o "github.service.ts" que faz toda a comunicação com a API externa do GitHub.
+• Buscando os dados no end-point da API do GitHub, fui realizando os códigos necessários para tratar esses dados e imprimir em tela.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+

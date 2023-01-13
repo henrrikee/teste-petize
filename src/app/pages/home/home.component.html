@@ -1,16 +1,33 @@
 <style>
     @import url('https://fonts.cdnfonts.com/css/nunito');
 </style>
-<p class="title">Search
-<p class="title" style="color: #8C19D2; text-align: right">d_evs</p>
-<span class="p-input-icon-left title" style="margin-top: 6.7%">
-    <i class="pi pi-search" style="margin-top: 2.6%;"></i>
-    <input type="text" placeholder="Search" [(ngModel)]="searchValue" size="40" pInputText/>
-</span>
-<span class="title" style="margin-left: 21%; margin-top: 6.1%">
-<button pButton type="button" label="Search" (click)="getUser()" class="p-button-help"></button>
-</span>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 
+<body class="ajust">
+    <div>
+        <p class="title">Search
+        <p class="title" style="color: #8C19D2; text-align: right">d_evs</p>
+    </div>
+    <div>
+        <span class="input1 p-input-icon-left">
+            <i class="pi pi-search"></i>
+            <input type="text" placeholder="Search" (keyup.enter)="getUser()" [(ngModel)]="searchValue" size="70" pInputText />
+        </span>
+    </div>
+    <div>
+        <span class="button1">
+            <button pButton type="button" label="Search" (click)="getUser()" class="p-button-help" style="width: 700%;"></button>
+        </span>
 
+    </div>
+</body>
 
+</html>
