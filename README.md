@@ -2,7 +2,6 @@
 
 • Primeiramente vamos clonar o projeto no GitHub para uma máquina local.
 
-
 • Acesse o link do projeto no GitHub - https://github.com/henrrikee/teste-petize.
 
 • Clique no botão verde do lado direito "<> Code", copie o código HTTPS.
