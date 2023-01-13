@@ -28,7 +28,7 @@ npm install primeflex --save
 
 # Startando o projeto
 
-• Abra o terminal da sua IDE, e digite "npm start" precione ENTER
+• Abra o terminal da sua IDE, e digite o comando "npm start" precione ENTER
 • O projeto vai rodar na porta 4200, caso não abra de forma automática é preciso digitar na barra de endereço
 do navegador da web "localhost:4200" e precionar ENTER.
 
