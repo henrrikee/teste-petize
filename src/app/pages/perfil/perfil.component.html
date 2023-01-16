@@ -1,8 +1,5 @@
-<style>
-    @import url('https://fonts.cdnfonts.com/css/nunito');
-</style>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
@@ -13,7 +10,7 @@
 
 <body>
     <div class="nav-bar">
-        <p class="search-devs inline-flex">Search <font color="#8C19D2">d_evs</font>
+        <p class="search-devs inline-flex">Search <span class="color-devs">d_evs</span>
         </p>
         <span class="p-input-icon-left input1 flex-row">
             <i class="pi pi-search"></i>
@@ -21,26 +18,26 @@
                 pInputText />
         </span>
         <div class="nav-bar">
-            <button pButton type="button" style="margin-left: 1050px; margin-right: 5px;" label="Search"
-                (click)="getUser()" class="p-button-help"></button>
+            <button pButton type="button" label="Search"
+                (click)="getUser()" class="p-button-help button1"></button>
             <button pButton type="button" label="voltar" [routerLink]="['/']" class="p-button-help"></button>
         </div>
     </div>
-    <form #frm="ngForm" name="formUser" th:method="post">
+    <form #frm="ngForm" name="formUser">
         <p-card class="card-1">
             <div class="avatar">
-                <p-avatar label="" image={{user.avatar_url}} name="avatar_url" id="avatar_url" styleClass="mr-2"
+                <p-avatar image={{user.avatar_url}} name="avatar_url" id="avatar_url" styleClass="mr-2"
                     size="xlarge" shape="circle"></p-avatar>
             </div>
             <span class="p-avatar-text ajust-text"><b>{{user.name}}</b></span><br>
             <span class="p-avatar-text ajust-text1">@{{user.login}}</span><br><br>
             <span>{{user.bio}}</span><br><br>
-            <span><i class="pi pi-heart"></i>&nbsp;{{user.followers}} Seguidores </span><br>
-            <span><i class="pi pi-user"></i>&nbsp;{{user.following}} Seguindo</span><br><br>
-            <span><i class="pi pi-building"></i>&nbsp;{{user.company}}</span><br>
-            <span><i class="pi pi-compass"></i>&nbsp;{{user.location}}</span><br>
-            <span><i class="pi pi-link"></i><a href={{user.blog}} target="_blank">&nbsp;{{user.blog}}</a></span><br>
-            <span><i class="pi pi-twitter"></i>&nbsp;<a href="https://twitter.com/{{user.twitter_username}}"
+            <span><i class="pi pi-heart"></i>{{user.followers}} Seguidores </span><br>
+            <span><i class="pi pi-user"></i>{{user.following}} Seguindo</span><br><br>
+            <span><i class="pi pi-building"></i>{{user.company}}</span><br>
+            <span><i class="pi pi-compass"></i>{{user.location}}</span><br>
+            <span><i class="pi pi-link"></i><a href={{user.blog}} target="_blank">{{user.blog}}</a></span><br>
+            <span><i class="pi pi-twitter"></i><a href="https://twitter.com/{{user.twitter_username}}"
                     target="_blank">{{user.twitter_username}}</a></span><br>
             <a href="https://github.com/{{user.login}}" target="_blank"><button pButton type="button" label="Contato"
                     style="width: 245px; margin-top:30px" class="p-button-help"></button></a>
@@ -49,11 +46,11 @@
         <ul>
             <p-card class="card-2">
                 <div *ngFor="let repo of reposArray">
-                    <b><a href={{repo.clone_url}} style="color: rgb(83, 83, 83)"
+                    <b><a class="repo-name" href={{repo.clone_url}}
                             target="_blank">{{repo.name}}</a></b><br><br>
                     {{repo.description}}<br><br>
-                    <i class="pi pi-star-fill" style="color:#8C19D2"></i>&nbsp;
-                    {{repo.stargazers_count}}&nbsp;&nbsp;&nbsp;&nbsp;Atualizado em
+                    <i class="pi pi-star-fill"></i>
+                    {{repo.stargazers_count}}<span class="update-at">Atualizado em</span>
                     {{repo.updated_at | date: 'dd/MM/yyyy'}}<br><br>
                     <hr>
                 </div>
